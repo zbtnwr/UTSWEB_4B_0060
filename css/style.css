@@ -3,3 +3,7 @@ body {
     color: #333;
     transition: font-size 0.2s; /* Agar perbesaran font terlihat halus untuk DOM 1*/
 }
+
+.kartu-layanan {
+    transition: all 0.3s ease;
+}
