@@ -13,4 +13,15 @@ $(document).ready(function() {
         // Mengubah CSS warna tulisan menjadi biru
         $(this).css('color', '#0d6efd'); 
     });
+
+    // 3. Ganti Gambar Saat Mouse Masuk (Hover Image)
+
+    $('#gambar-profil').hover(
+        function() { // Saat mouse masuk
+            $(this).attr('src', 'logo Awura 2.png');
+        }, 
+        function() { // Saat mouse keluar (kembali semula)
+            $(this).attr('src', 'logo Awura.png');
+        }
+    );
 });
