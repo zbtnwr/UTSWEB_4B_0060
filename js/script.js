@@ -20,8 +20,15 @@ $(document).ready(function() {
         function() { // Saat mouse masuk
             $(this).attr('src', 'logo Awura 2.png');
         }, 
-        function() { // Saat mouse keluar (kembali semula)
+        function() { // Saat mouse keluar
             $(this).attr('src', 'logo Awura.png');
         }
     );
+
+    // 4. Cegah Klik Kanan Pada Gambar
+    
+    $('.cegah-klik-kanan').bind('contextmenu', function(e) {
+        e.preventDefault(); // Muncu pop up
+        alert('Maaf, gambar ini tidak boleh disimpan sembarangan.');
+    });
 });
