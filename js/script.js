@@ -31,4 +31,11 @@ $(document).ready(function() {
         e.preventDefault(); // Muncu pop up
         alert('Maaf, gambar ini tidak boleh disimpan sembarangan.');
     });
+
+    // 5. Ubah Ketebalan Garis Saat Diklik
+    
+    $('.kartu-layanan').click(function() {
+        $(this).toggleClass('border-primary border-3');
+    });
+
 });
