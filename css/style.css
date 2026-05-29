@@ -1,0 +1,5 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    transition: font-size 0.2s; /* Agar perbesaran font terlihat halus untuk DOM 1*/
+}
