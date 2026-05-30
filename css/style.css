@@ -7,3 +7,11 @@ body {
 .kartu-layanan {
     transition: all 0.3s ease;
 }
+
+.btn-primary {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
+}
