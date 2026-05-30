@@ -28,7 +28,7 @@ $(document).ready(function() {
     // 4. Cegah Klik Kanan Pada Gambar
     
     $('.cegah-klik-kanan').bind('contextmenu', function(e) {
-        e.preventDefault(); // Muncu pop up
+        e.preventDefault(); // Muncul pop up
         alert('Maaf, gambar ini tidak boleh disimpan sembarangan.');
     });
 
@@ -37,5 +37,11 @@ $(document).ready(function() {
     $('.kartu-layanan').click(function() {
         $(this).toggleClass('border-primary border-3');
     });
+
+    // 6. Kursor Langsung Aktif Otomatis
+
+    // Jadi ketika halaman web dibuka, kursor langsung ada di kotak "Nama Anda"
+    $('#input-nama').focus();
+
 
 });
