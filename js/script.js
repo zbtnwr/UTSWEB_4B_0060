@@ -43,5 +43,15 @@ $(document).ready(function() {
     // Jadi ketika halaman web dibuka, kursor langsung ada di kotak "Nama Anda"
     $('#input-nama').focus();
 
+    // 7. Sorot (Highlight warna kunign) Kolom Input Form
+  
+    $('.input-sorot').focus(function() {
+        // Saat diklik/aktif, latar belakang jadi kuning muda
+        $(this).css('background-color', '#fff3cd');
+    });
+    $('.input-sorot').blur(function() {
+        // Saat kursor pindah ke tempat lain, latar kembali putih
+        $(this).css('background-color', '#ffffff');
+    });
 
 });
