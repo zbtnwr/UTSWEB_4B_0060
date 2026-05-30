@@ -32,7 +32,7 @@ $(document).ready(function() {
         alert('Maaf, gambar ini tidak boleh disimpan sembarangan.');
     });
 
-    // 5. Ubah Ketebalan Garis Saat Diklik
+    // 5. Ubah Ketebalan Garis Saat Diklik menjadi warna biru
     
     $('.kartu-layanan').click(function() {
         $(this).toggleClass('border-primary border-3');

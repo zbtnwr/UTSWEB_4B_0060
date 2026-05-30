@@ -1,25 +1,27 @@
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    transition: font-size 0.2s; /* Agar perbesaran font terlihat halus untuk DOM 1*/
+  font-family: Arial, sans-serif;
+  color: #333;
+  transition: font-size 0.2s; /* Agar perbesaran font terlihat halus untuk DOM 1*/
 }
 
 .kartu-layanan {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
 }
 
 /* jarak untuk layar HP */
 @media (max-width: 768px) {
-    section {
-        padding-top: 3rem !important;
-        padding-bottom: 3rem !important;
-    }
+  section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
 }
