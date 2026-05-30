@@ -15,3 +15,11 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
 }
+
+/* jarak untuk layar HP */
+@media (max-width: 768px) {
+    section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
