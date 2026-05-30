@@ -54,4 +54,17 @@ $(document).ready(function() {
         $(this).css('background-color', '#ffffff');
     });
 
+    // 8. Ganti Teks Tombol Sementara
+
+    $('#btn-kirim').hover(
+        function() {
+            // Saat mouse berada di atas tombol
+            $(this).text('Yakin mau dikirim?');
+        },
+        function() {
+            // Saat mouse pergi
+            $(this).text('Kirim Pesan');
+        }
+    );
+
 });
