@@ -67,7 +67,7 @@ $(document).ready(function() {
         }
     );
 
-    // 10. Syarat Centang
+    // 9. Syarat Centang
 
     $('#cek-setuju').change(function() {
         if ($(this).is(':checked')) {
@@ -77,6 +77,13 @@ $(document).ready(function() {
             // Jika tidak dicentang, pasang attribute "disabled" (tombol mati)
             $('#btn-kirim').prop('disabled', true);
         }
+    });
+
+    // 10. Tombol Scroll Kembali Ke Atas
+
+    $('#btn-ke-atas').click(function() {
+        // Mengubah posisi scroll layar keatas)
+        $(window).scrollTop(0);
     });
 
 });
