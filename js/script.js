@@ -67,4 +67,16 @@ $(document).ready(function() {
         }
     );
 
+    // 10. Syarat Centang
+
+    $('#cek-setuju').change(function() {
+        if ($(this).is(':checked')) {
+            // Jika dicentang, hapus attribute "disabled" (tombol nyala)
+            $('#btn-kirim').prop('disabled', false);
+        } else {
+            // Jika tidak dicentang, pasang attribute "disabled" (tombol mati)
+            $('#btn-kirim').prop('disabled', true);
+        }
+    });
+
 });
